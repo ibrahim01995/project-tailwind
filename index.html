@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>project tailwind css</title>
+  <link rel="shortcut icon" href="images/car.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    body {
+      font-family: "Poppins", serif;
+    }
+  </style>
+</head>
+
+<body class="font-sans bg-pink-100 p-left,right 0px">
+
+  <!-- Header -->
+  <section class="container mx-auto">
+    <header class="bg-white shadow-lg py-4">
+      <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
+        <h1 class="text-xl font-bold text-gray-800">G3 Architects</h1>
+        <nav class="mt-5 md:mt-0 space-x-6 text-gray-600">
+          <a href="#" class="hover:text-gray-900">Home</a>
+          <a href="#" class="hover:text-gray-900">About</a>
+          <a href="#" class="hover:text-gray-900">Contact Us</a>
+          <a href="#" class="hover:text-gray-900">Login</a>
+        </nav>
+      </div>
+    </header>
+  </section>
+
+  <!-- Hero Section -->
+  <section class=" text-black text-center py-20 px-4">
+    <h2 class="text-4xl font-semibold">Brand New </h2>
+    <h3 class="text-4xl font-semibold">Group of Architects</h3>
+    <p class="mt-4 text-lg">There are many variations of passages of Lorem Ipsum available, <br> but the majority have
+      suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
+    <button class="mt-10 bg-yellow-500 text-white font-semibold py-2 px-6 rounded-full hover:bg-violet-600">Explore
+      More</button>
+  </section>
+  <!-- image section -->
+  <section class="container mx-auto">
+    <div class="avatar">
+      <div class="w-1440 h-700 rounded">
+        <img src="images/Rectangle 12.png" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="grid grid-cols-1 sm:grid-cols-2 items-center gap-10 mt-10 container mx-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 mt-10 items-center">
+      <img src="images/Rectangle 14.png" alt="">
+      <img src="images/Rectangle 15.png" alt="">
+      <img src="images/Rectangle 16.png" alt="">
+      <img src="images/Rectangle 17.png" alt="">
+    </div>
+    <div>
+      <h1 class="font-bold text-4xl ">Quick list of Our <br> Features</h1>
+      <p class="mt-4 text-lg">There are many variations of passages of Lorem Ipsum available, <br> but the majority have
+        suffered alteration
+        in
+        some form, by injected <br> humour, or randomised words which don't look even</p>
+      <button class="mt-10 bg-yellow-500 text-white font-semibold py-2 px-6 rounded-full hover:bg-violet-600">Explore
+        More</button>
+    </div>
+  </section>
+  <!-- Experience Section  -->
+  <section class="container mx-auto grid grid-cols-3 mt-8 py-8 gap-20 items-center justify-center">
+    <div class="mt-8 line-clamp-2">
+      <div class="collapse bg-base-200">
+        <input type="radio" name="my-accordion-1" checked="checked" />
+        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="collapse bg-base-200">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="collapse bg-base-200">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="collapse bg-base-200">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="collapse bg-base-200">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <img class="w-708 h-982 ms:576px" src="images/Rectangle 4.png" alt="">
+      <div class="w-20 max-h-100 bg-yellow-500">10+Year
+        Experience</div>
+
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    <p>&copy; 2023 G3 Architects. All rights reserved. Built with Tailwind CSS.</p>
+  </footer>
+
+</body>
+
+</html>
